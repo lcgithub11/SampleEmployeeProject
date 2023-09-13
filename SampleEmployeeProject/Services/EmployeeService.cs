@@ -1,5 +1,4 @@
 ﻿using OfficeOpenXml;
-using System.Reflection.Metadata;
 
 namespace SampleEmployeeProject.Services
 {
@@ -118,7 +117,6 @@ namespace SampleEmployeeProject.Services
                     if (correspondingEmployee == null)
                         throw new Exception($"No employee found for register number {registerNumber} in the family members worksheet.");
 
-                    // We Assuming 
                     FamilyMember familyMember = new FamilyMember
                     {
                         EmployeeId = correspondingEmployee.Id,
